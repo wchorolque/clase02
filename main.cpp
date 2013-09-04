@@ -8,10 +8,16 @@ class Gato
         int edad;
 
     public:
+        Gato();
         void ColocarEdad(int);
         void MostrarEdad();
 
 };
+
+Gato::Gato()
+{
+    edad = 0;
+}
 
 void Gato::ColocarEdad(int e)
 {
@@ -26,6 +32,7 @@ void Gato::MostrarEdad()
 int main()
 {
     Gato gato;
+    gato.MostrarEdad();
     gato.ColocarEdad(5);
     cout << "Edad: ";
     gato.MostrarEdad();
